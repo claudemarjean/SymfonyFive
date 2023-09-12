@@ -13,8 +13,11 @@ class BonjourController extends AbstractController
      */
     public function index(): Response
     {
+
+        $firstname = "John";
+
         return $this->render('bonjour/index.html.twig', [
-            'controller_name' => 'BonjourController',
+            'firstname' => $firstname
         ]);
     }
 }
